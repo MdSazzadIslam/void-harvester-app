@@ -1,0 +1,13 @@
+services:
+  ageras:
+    build: .
+    image: vh
+    container_name: vh
+    restart: on-failure:10
+    environment:
+      PORT: ${PORT}
+    volumes:
+      - ./src:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - ${PORT}:${PORT}

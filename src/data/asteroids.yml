@@ -1,0 +1,15 @@
+- name: Vesta
+  type: C
+  mass: 60.16
+
+- name: Ceres
+  type: S
+  mass: 107.52
+
+- name: Psyche
+  type: M
+  mass: 25.04
+
+- name: Bennu
+  type: V
+  mass: 83.91
