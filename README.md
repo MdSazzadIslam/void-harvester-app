@@ -29,47 +29,6 @@ This project simulates an asteroid mining system. The system can load asteroid d
 - **src/index.ts**: Entry point for the application.
 
 
-### Folder structure
-
-src/
-├── app.ts                  # Entry point for starting the application
-├── index.ts                # Main entry point for initializing the application
-│
-├── config/                 # Configuration files
-│   └── index.ts            # Main configuration file
-│
-├── controllers/            # Controllers handling HTTP requests
-│   ├── resourceController.ts
-│   └── orderController.ts
-│
-├── data/                   # Static data files
-│   └── asteroids.yml       # Initial asteroid data
-│
-├── middlewares/            # Middleware functions
-│   └── orderValidator.ts   # Request validation middleware
-│
-├── models/                 # Data models or entities
-│   ├── asteroids.ts
-│   ├── order.ts
-│   └── resource.ts
-│
-├── routes/                 # Route handlers
-│   ├── orderRoute.ts
-│   ├── resourceRoute.ts
-│   └── routeBinder.ts      # Route binding and configuration
-│
-├── services/               # Business logic services
-│   ├── resourceService.ts
-│   └── orderService.ts
-│
-└── utils/                  # Utility functions
-    ├── yamlLoader.ts       # YAML file loading utility
-    ├── rateLimiter.ts      # Rate limiting utility
-    ├── logger.ts           # Logging utility
-    └── calculation.ts      # Calculation functions
-
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -80,10 +39,54 @@ src/
 ### Installation
 
 1. Clone the repository
+
+   ```bash
+   https://github.com/MdSazzadIslam/void-harvester-app.git
+
 2. Install dependencies:
 
    ```bash
    npm install
+
+3. Folder structure
+
+   ```bash
+   src/
+   ├── app.ts                  # Entry point for starting the application
+   ├── index.ts                # Main entry point for initializing the application
+   │
+   ├── config/                 # Configuration files
+   │   └── index.ts            # Main configuration file
+   │
+   ├── controllers/            # Controllers handling HTTP requests
+   │   ├── resourceController.ts
+   │   └── orderController.ts
+   │
+   ├── data/                   # Static data files
+   │   └── asteroids.yml       # Initial asteroid data
+   │
+   ├── middlewares/            # Middleware functions
+   │   └── orderValidator.ts   # Request validation middleware
+   │
+   ├── models/                 # Data models or entities
+   │   ├── asteroids.ts
+   │   ├── order.ts
+   │   └── resource.ts
+   │
+   ├── routes/                 # Route handlers
+   │   ├── orderRoute.ts
+   │   ├── resourceRoute.ts
+   │   └── routeBinder.ts      # Route binding and configuration
+   │
+   ├── services/               # Business logic services
+   │   ├── resourceService.ts
+   │   └── orderService.ts
+   │
+   └── utils/                  # Utility functions
+      ├── yamlLoader.ts       # YAML file loading utility
+      ├── rateLimiter.ts      # Rate limiting utility
+      ├── logger.ts           # Logging utility
+      └── calculation.ts      # Calculation functions
 
 
 Don't forget to give this repo a ⭐ if you like and want to appreciate my efforts
